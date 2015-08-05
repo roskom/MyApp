@@ -144,6 +144,7 @@ gulp.task('sync', ['serve'], cb => {
   browserSync = require('browser-sync');
 
   browserSync({
+	  browser: "chrome",
     logPrefix: 'RSK',
     notify: false,
     // Run as an https by setting 'https: true'
