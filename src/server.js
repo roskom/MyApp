@@ -39,8 +39,8 @@ server.get('*', async (req, res, next) => {
     };
 
     await router.dispatch({ path: req.path, context }, (state, component) => {
-      data.body = ReactDOM.renderToString(component);
-      data.css = css.join('');
+      //data.body = ReactDOM.renderToString(component);
+      //data.css = css.join('');
     });
 
     const html = template(data);
